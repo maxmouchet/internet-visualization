@@ -2,6 +2,8 @@
 
 This repository contains the source code for the web interface demoed in "[Towards an interactive visualization of the Internet](https://www.youtube.com/watch?v=txp0P-ETWrQ)" ([slides](https://zenodo.org/record/8034723/files/TowardsAnInteractiveVisualizationOfTheInternet.pdf?download=1), [dataset](https://zenodo.org/record/8034723)).
 
+![Screenshot](ui.png)
+
 ## Reproduce the web interface
 
 To reproduce the web interface demoed in the talk, download the tileset (5.2GB) and start the server:
