@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "internet-maps"
+version = "0.1.0"
+description = ""
+authors = ["Maxime Mouchet <max@maxmouchet.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+appdirs = "^1.4.4"
+fsspec = "^2023.6.0"
+joblib = "^1.2.0"
+lz4 = "^4.3.2"
+networkx = "^3.1"
+networkxtra = { version = "^1.0.0", extras = ["pyproj", "tqdm"] }
+pandas = "^2.0.2"
+pyasn = "^1.6.1"
+pytricia = "^1.0.2"
+requests = "^2.31.0"
+tqdm = "^4.65.0"
+typer = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+internet-maps = "internet_maps.main:app"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

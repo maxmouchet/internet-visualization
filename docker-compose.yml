@@ -1,0 +1,13 @@
+services:
+  tiles:
+    image: ghcr.io/consbio/mbtileserver:latest
+    command: mbtileserver --dir /data
+    ports:
+      - 8000:8000
+    volumes:
+      - ./data:/data
+
+  web:
+    build: web
+    ports:
+      - 1234:1234
